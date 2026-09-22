@@ -22,7 +22,7 @@ function Cadastro() {
 
       try {
 
-        const resposta = await fetch("http://localhost:3000/usuarios", {
+        const resposta = await fetch("https://minha-tarefa.onrender.com/usuarios", {
         method: "POST",
 
         headers: {

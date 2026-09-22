@@ -23,7 +23,7 @@ function Login() {
 
      try {
 
-        const resposta = await fetch("http://localhost:3000/login", {
+        const resposta = await fetch("https://minha-tarefa.onrender.com/login", {
             method: "POST",
 
             headers: {

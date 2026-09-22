@@ -40,7 +40,7 @@ function Tarefa() {
 
         const token = localStorage.getItem("token");
 
-        const resposta = await fetch("http://localhost:3000/tarefas", {
+        const resposta = await fetch("https://minha-tarefa.onrender.com/tarefas", {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -91,7 +91,7 @@ async function adicionarTarefa(e: React.SubmitEvent<HTMLFormElement>) {
 
     const token = localStorage.getItem("token");
 
-    const resposta = await fetch("http://localhost:3000/tarefas", {
+    const resposta = await fetch("https://minha-tarefa.onrender.com/tarefas", {
         method: "POST",
 
         headers: {
@@ -145,7 +145,7 @@ async function excluirTarefa(id: string) {
 
     const token = localStorage.getItem("token");
 
-    const resposta = await fetch(`http://localhost:3000/tarefas/${id}`, {
+    const resposta = await fetch(`https://minha-tarefa.onrender.com/tarefas/${id}`, {
         method: "DELETE",
 
         headers: {
@@ -198,7 +198,7 @@ async function salvarEdicao(id: string) {
   
     const token = localStorage.getItem("token");
 
-    const resposta = await fetch(`http://localhost:3000/tarefas/${id}`, {
+    const resposta = await fetch(`https://minha-tarefa.onrender.com/tarefas/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -250,7 +250,7 @@ async function alterarConcluida(tarefa: Tarefa) {
     const token = localStorage.getItem("token");
 
     const resposta = await fetch(
-        `http://localhost:3000/tarefas/${tarefa.id}`,
+        `https://minha-tarefa.onrender.com/tarefas/${tarefa.id}`,
         {
             method: "PUT",
             headers: {
