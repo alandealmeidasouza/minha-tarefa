@@ -1,0 +1,143 @@
+.cadastro {
+    background-image: url("/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 20px;
+    min-height: 650px;
+    position: relative;
+}
+.cadastro::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #00251f
+    );
+}
+.apresentacao-cadastro {
+    color: white;
+}
+.apresentacao-cadastro h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.apresentacao-cadastro h1 span {
+    color: #2ed47a;
+}
+.apresentacao-cadastro p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px 20px;
+    margin-top: 25px;
+}
+.form-cadastro h2{
+    margin-bottom: 5px;
+}
+.form-cadastro p{
+    margin-bottom: 20px;
+}
+.form-cadastro input {
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.form-cadastro button {
+    height: 48px;
+    background-color: #16b85a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.form-cadastro button:hover {
+    background-color: #129c4c;
+}
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.login-link a {
+    color: #16b85a;
+    font-weight: bold;
+}
+.input-cadastro {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+.input-cadastro i {
+    font-size: 18px;
+    margin-right: 12px;
+}
+.input-cadastro input {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.input-cadastro .fa-eye,
+.input-cadastro .fa-eye-slash {
+    cursor: pointer;
+}
+.aviso-senha {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: -8px;
+    margin-bottom: 15px;
+}
+.erro-cadastro {
+    background-color: #ffe5e5;
+    color: #b42318;
+    border: 1px solid #f5b7b7;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+@media (min-width: 768px) {
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    min-height: 650px;
+}
+.form-cadastro {
+    width: 380px;
+    margin-top: 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+.apresentacao-cadastro h1 {
+    font-size: 44px;
+    line-height: 1.1;
+}
+.apresentacao-cadastro p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 520px;
+}
+}

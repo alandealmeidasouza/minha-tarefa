@@ -1,0 +1,244 @@
+header{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+header.container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    height: 75px;
+}
+.container1 img{
+    margin-left: 5px;
+}
+section.container2{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-right: 20px;
+}
+.container2 span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #756f6f;
+    transition: all 0.5s;
+}
+.container2 span:hover {
+    color: #0e5029;
+}
+header section img{
+    width: 230px;
+}
+.container2 div{
+    font-size: 20px;
+    cursor: pointer;
+     margin-right: 12px;
+}
+.container2 p{
+    font-size: 40px;
+    color: rgba(128, 128, 128, 0.76);
+}
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+.menu-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    max-width: 250px;
+}
+.topo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.fechar-menu {
+    font-size: 25px;
+    cursor: pointer;
+}
+.perfil-menu{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 40px;
+    color: rgba(128, 128, 128, 0.76);
+}
+.perfil-menu span {
+    font-size: 14px;
+    font-weight: 600;
+}
+.logo-menu {
+    background-image: url(./logo.png);
+    background-repeat: no-repeat;
+    background-size: 250px auto;
+    background-position: center;
+    height: 80px;
+    margin-top: -20px;
+}
+.opcoes-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    color: black;
+    font-size: 20px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.288);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+.opcao-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.opcao-menu i {
+    font-size: 26px;
+    width: 30px;
+    text-align: center;
+    margin-left: 5px;
+    color: black;
+}
+.opcao-menu:hover {
+    background-color: rgba(213, 241, 227, 0.719);
+}
+.opcao-menu:hover i, .opcao-menu:hover span{
+    color:#4CAF50;
+}
+.sair {
+    background-color: transparent;
+    border: 1px solid #16b85a;
+    color: #16b85a;
+    padding: 7px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.sair:hover {
+    background-color: #16b85a;
+    color: white;
+}
+.menu-desktop {
+    display: none;
+}
+.container2 {
+    position: relative;
+}
+.menu-perfil {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+.menu-perfil button {
+    border: none;
+    background: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+.perfil-logado .fa-circle-user {
+    font-size: 30px;
+    color: #a3a3a3;
+}
+.perfil-logado .fa-chevron-down {
+    font-size: 12px;
+}
+.perfil-logado {
+    padding: 7px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.perfil-logado:hover {
+    background-color: #f0f0f0;
+}
+.perfil-logado .fa-chevron-down {
+    transition: transform 0.3s;
+}
+.perfil-logado .seta-aberta {
+    transform: rotate(180deg);
+}
+.filtros-tarefas button:hover {
+    background-color: #dce3df;
+}
+.filtros-tarefas .filtro-ativo:hover {
+    background-color: #16b85a;
+}
+@media (min-width: 768px) {
+
+.menu-desktop {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+.menu-hamburguer {
+    display: none;
+}
+.menu-desktop a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.menu-desktop a:hover {
+    color: #16b85a;
+}
+header.container1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 80px;
+    padding: 0 8%;
+}
+.beneficios-inicio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 8%;
+}
+header.container1 {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.menu-desktop {
+    margin-left: auto;
+    margin-right: 35px;
+}
+.tarefas {
+    min-height: calc(100vh - 200px);
+}
+.nova-tarefa {
+    margin-top: 30px;
+}
+header.container1 {
+    height: 75px;
+}
+}

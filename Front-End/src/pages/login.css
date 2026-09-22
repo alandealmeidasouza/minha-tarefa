@@ -1,0 +1,138 @@
+.login {
+    background-image: url("/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 20px;
+    min-height: 650px;
+    position: relative;
+}
+.login::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #00251f
+    );
+}
+.apresentacao-login {
+    color: white;
+}
+.apresentacao-login h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.apresentacao-login h1 span {
+    color: #2ed47a;
+}
+.apresentacao-login p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px 20px;
+    margin-top: 25px;
+}
+.form-login h2{
+    margin-bottom: 5px;
+}
+.form-login p{
+    margin-bottom: 20px;
+}
+.input-login {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+.input-login i {
+    font-size: 18px;
+    margin-right: 12px;
+}
+.input-login input {
+    flex: 1;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.form-login button {
+    height: 48px;
+    background-color: #16b85a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.form-login button:hover {
+    background-color: #129c4c;
+}
+.cadastro-link {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 18px;
+}
+.cadastro-link a {
+    color: #16b85a;
+    font-weight: bold;
+}
+.input-login .fa-eye,
+.input-login .fa-eye-slash {
+    cursor: pointer;
+}
+.sessao-expirada {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffe69c;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+.erro-login {
+    background-color: #ffe5e5;
+    color: #b42318;
+    border: 1px solid #f5b7b7;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+@media (min-width: 768px) {
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    min-height: 650px;
+}
+.form-login {
+    width: 380px;
+    margin-top: 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+.apresentacao-login h1 {
+    font-size: 44px;
+    line-height: 1.1;
+}
+.apresentacao-login p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 520px;
+}
+}
