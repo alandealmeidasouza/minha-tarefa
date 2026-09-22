@@ -1,5 +1,5 @@
 import "./login.css"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router";
 
 function Login() {
@@ -13,6 +13,16 @@ function Login() {
     const [erro, setErro] = useState("");
     const [carregando, setCarregando] = useState(false);
     const sessaoExpirada = location.state?.sessaoExpirada;
+
+    useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (token) {
+        localStorage.removeItem("token");
+        localStorage.removeItem("nome");
+        window.location.reload();
+    }
+}, []);
 
     async function entrar(e: React.SubmitEvent<HTMLFormElement>) {
         e.preventDefault();

@@ -37,10 +37,13 @@ const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
-  {path: "/", element: <Inicio/>},
-  {path: "/cadastro", element: <Cadastro/>},
-  {path: "/login", element: <Login/>},
-  {path: "/tarefa", element: (
+  {path: "/", element: localStorage.getItem("token")
+    ? <Navigate to="/tarefa" replace />
+    : <Inicio />
+},
+  { path: "/cadastro", element: <Cadastro/>},
+  { path: "/login", element: <Login /> },
+  { path: "/tarefa", element: (
         <RotaProtegida>
             <Tarefa />
         </RotaProtegida>

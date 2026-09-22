@@ -171,6 +171,10 @@ header section img{
     font-size: 12px;
 }
 .perfil-logado {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
     padding: 7px 10px;
     border-radius: 10px;
     cursor: pointer;
