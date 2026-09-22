@@ -5,7 +5,7 @@
 
 */
 -- AlterTable
-ALTER TABLE `tarefa` ADD COLUMN `usuarioId` VARCHAR(191) NOT NULL;
+ALTER TABLE `Tarefa` ADD COLUMN `usuarioId` VARCHAR(191) NOT NULL;
 
 -- CreateTable
 CREATE TABLE `Usuario` (
